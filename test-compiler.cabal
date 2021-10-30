@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           test-compiler
+version:        0.0.0
+build-type:     Simple
+
+executable smhihs
+  main-is: Main.hs
+  other-modules:
+      Codegen
+      Evaluator
+      Lexer
+      Parser
+      Prettyprinter
+      Renamer
+      SharedUtils
+      TypeChecker
+      Paths_test_compiler
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -fwarn-missing-signatures
+  build-depends:
+      array
+    , base
+    , containers
+    , mtl
+    , prettyprinter
+    , text
+    , transformers
+  default-language: Haskell2010
