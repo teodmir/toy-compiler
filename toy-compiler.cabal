@@ -4,11 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           test-compiler
+name:           toy-compiler
 version:        0.0.0
+license:        GPL-3
+license-file:   LICENSE
 build-type:     Simple
 
-executable smhihs
+executable toy-compiler
   main-is: Main.hs
   other-modules:
       Codegen
@@ -19,7 +21,7 @@ executable smhihs
       Renamer
       SharedUtils
       TypeChecker
-      Paths_test_compiler
+      Paths_toy_compiler
   hs-source-dirs:
       src
   ghc-options: -Wall -fwarn-missing-signatures

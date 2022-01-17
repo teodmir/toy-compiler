@@ -13,16 +13,8 @@ ghc-options:
   -Wall
   -fwarn-missing-signatures
 
-# For some reason, uncommenting the build-tools related lines prevents Cabal
-# from finding the alex and happy executables when building. However, enabling
-# them in nix-shell is fine...
-
-# build-tools:
-#   - alex
-#   - happy
-
 executables:
-  smhihs:
+  toy-compiler:
     main: Main.hs
 
 source-dirs:
